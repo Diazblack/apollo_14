@@ -1,0 +1,16 @@
+<h1>Astronauts</h1>
+
+<% @astronauts.each do |astronaut| %>
+  <div class="astronaut">
+    <ul>
+      <li>Name: <%= astronaut.name %></li>
+      <li>Age: <%= astronaut.age %></li>
+      <li>Job: <%= astronaut.job %></li>
+      binding.pry
+    </ul>
+    <% @astronaut.missions.each do |mision| %>
+      <li>Title: <%= mission.title%></li>
+      <li>Title: <%= mission.time_in_space%></li>
+    <% end %>
+  </div>
+<% end %>
